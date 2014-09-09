@@ -1,0 +1,46 @@
+[alias]
+	bd = branch -d
+	co = checkout
+	l = log --pretty=format:'%C(auto)%h - %d %an: %s' --all --graph --decorate
+	lga = log --oneline --graph --all --decorate
+	lol = log --pretty=oneline --abbrev-commit --graph --decorate
+	unstage = reset HEAD
+	staged = diff --cached
+	unstaged = diff
+	current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
+	track = checkout -t
+[user]
+	name = Kevin Davlin
+	email = kevin.davlin@arrayhealth.com
+[core]
+	autocrlf = false
+	excludesfile = ~/.gitignore_global
+	#editor = notepad
+	#excludesfile = c:/Users/kevin.davlin/.gitignore_global
+[help]
+	autocorrect = 1
+[color]
+	ui = auto
+[http]
+	sslVerify = true
+[push]
+	default = current
+[merge]
+	tool = kdiff3
+[diff]
+	guitool = kdiff3
+#[credential]
+#	helper = !\\\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\\\"
+[color "status"]
+	changed = cyan normal bold
+	untracked = cyan normal bold
+[color "branch"]
+        current = yellow black
+	local = yellow
+	remote = magenta
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

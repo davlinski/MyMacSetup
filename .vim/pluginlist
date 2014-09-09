@@ -1,0 +1,12 @@
+#/bin/sh
+
+git clone https://github.com/atweiden/vim-dragvisuals.git
+git clone https://github.com/scrooloose/nerdtree.git
+git clone https://github.com/tpope/vim-git.git
+git clone https://github.com/tpope/vim-scriptease.git
+git clone https://github.com/tpope/vim-surround.git
+git clone https://github.com/nanotech/jellybeans.vim.git
+git clone https://github.com/vim-scripts/tComment.git
+git clone https://github.com/tpope/vim-fugitive.git
+git clone https://github.com/tpope/vim-ragtag.git
+git clone https://github.com/tpope/vim-sensible.git
