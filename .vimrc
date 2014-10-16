@@ -84,6 +84,8 @@ set nocompatible
     " A fancy start screen, shows MRU etc.
     Bundle 'mhinz/vim-startify'
 
+    Bundle 'vitorgalvao/autoswap_mac'
+
     " Awesome syntax checker.
     " REQUIREMENTS: See :h syntastic-intro
     Bundle 'scrooloose/syntastic'
