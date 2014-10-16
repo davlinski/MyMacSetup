@@ -59,8 +59,8 @@ my-machine-setup
 node_modules_bak
 perl5
 server_bak.js
-uninstall-node.sh
-vividchalk.vim
+#uninstall-node.sh
+#vividchalk.vim
 .zcompdump-Kevin’s MacBook Pro-5.0.2
 
 old.pathogen.bundle
